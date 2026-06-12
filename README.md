@@ -69,3 +69,17 @@ alice-skills/
 ## Notes
 
 Use `workflows/` and `templates/` for your additional process rules: fixed change folders, checklists, resume checkpoints, completion gates, and schema-first API planning.
+
+## Acknowledgements
+
+During the organization and development of `alice-skills`, the project referenced and reused skill / agent materials from the following open-source projects:
+
+* [mattpocock/skills](https://github.com/mattpocock/skills): Provides engineering workflow skills such as `to-prd`, `to-issues`, `tdd`, `diagnose`, `grill-with-docs`, and `zoom-out`.
+* [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills): Provides software lifecycle skills such as `spec-driven-development`, `planning-and-task-breakdown`, `incremental-implementation`, `test-driven-development`, `code-review-and-quality`, `security-and-hardening`, and `shipping-and-launch`.
+* [phuryn/pm-skills](https://github.com/phuryn/pm-skills): Provides product and delivery review skills such as `create-prd`, `test-scenarios`, `pre-mortem`, `strategy-red-team`, `intended-vs-implemented`, and `shipping-artifacts`.
+* [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents): Provides expert role personas under `agents/`, including engineering, design, security, testing, product, marketing, sales, and other perspectives.
+
+In addition, the organization of `workflows/` and `changes/` was inspired by Superpowers’ execution discipline and OpenSpec-style change record practices.
+
+Thanks to the above open-source projects and their maintainers for their contributions.
+
