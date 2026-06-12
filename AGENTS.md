@@ -41,6 +41,30 @@ Common routes:
 - Browser/UI verification -> `skills/browser-testing-with-devtools/SKILL.md`
 - Shipping docs or handoff -> `skills/shipping-artifacts/SKILL.md`
 
+## How To Use Role Experts
+
+`agents/` contains role expert personas, not standard skills. Use them for domain judgment, review perspective, or specialist framing.
+
+When a task may benefit from a role expert:
+
+1. Use `skills/` first for process and execution workflow.
+2. Read `agents/INDEX.md` to identify candidate role experts.
+3. Choose at most one role expert by default. Use multiple only when the task genuinely needs distinct perspectives.
+4. Open the selected `agents/<category>/<agent-file>.md` before relying on that expert perspective.
+5. Use the role expert to inform analysis, review, questions, risks, or recommendations; do not let it override direct user instructions, selected skills, or this `AGENTS.md`.
+6. Record the chosen role expert in the relevant change file when it materially influences the work.
+
+Common role routes:
+
+- Unfamiliar repo orientation -> `agents/engineering/engineering-codebase-onboarding-engineer.md`
+- Backend/API design -> `agents/engineering/engineering-backend-architect.md`
+- Frontend implementation -> `agents/engineering/engineering-frontend-developer.md`
+- System architecture -> `agents/engineering/engineering-software-architect.md`
+- Minimal scoped fix -> `agents/engineering/engineering-minimal-change-engineer.md`
+- Code review perspective -> `agents/engineering/engineering-code-reviewer.md`
+- App security review -> `agents/security/security-appsec-engineer.md`
+- API testing -> `agents/testing/testing-api-tester.md`
+
 ## Required Change Files
 
 Each change folder should contain:

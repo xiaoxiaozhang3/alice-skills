@@ -11,18 +11,21 @@ alice-skills/
   AGENTS.md
   README.md
   skills/
+  agents/
   workflows/
   changes/
   templates/
   evals/
 ```
 
-## Skills Policy
+## Skills And Agents Policy
 
 - `skills/` contains executable, mature skill folders copied from existing sources.
+- `agents/` contains role expert personas copied from `agency-agents`; these are not standard `SKILL.md` skills.
+- Use skills first for process, then add one role expert when specialist judgment is useful.
 - Do not add hand-written aggregate skills unless the user explicitly asks.
 - Workflow notes, checkpoints, and OpenSpec-style change tracking live outside `skills/`.
-- If a source skill needs customization, copy it first, then edit the copied version in place with a change record.
+- If a source skill or role expert needs customization, copy it first, then edit the copied version in place with a change record.
 
 ## Included Skill Groups
 
