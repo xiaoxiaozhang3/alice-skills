@@ -1,19 +1,45 @@
-# My Skills Agent Rules
+# Alice Skills Agent Rules
 
-This directory is a personal Agent Skill source repository. Treat it as a skill design workspace, not as a dump of upstream skills.
+This directory is a personal Agent Skill source repository.
 
-## Operating Rules
+## Current Policy
 
-1. Keep changes inside this repository unless the user explicitly asks to install skills elsewhere.
-2. Reuse existing patterns from this repository before inventing new ones.
-3. Do not mechanically copy upstream skills. Extract the reusable rule, decision tree, checklist, or template, then rewrite it for this repository.
-4. Keep `SKILL.md` concise. Move long examples, rubrics, and source notes into `references/` when a skill grows large.
-5. Every skill must have clear trigger conditions, non-use cases, a decision tree when branching is non-obvious, anti-patterns with alternatives, and a self-check checklist.
-6. Every task run must live under `changes/YYYY-MM-DD-task-slug/`. Do not scatter design, plan, progress, verification, or review files.
-7. If a user says continue, resume, or pick up from last time, first read the latest relevant `changes/*/05-progress.md` and `changes/*/04-tasks.md`.
-8. Do not claim completion without fresh verification evidence recorded in `06-verification.md`.
+1. `skills/` should contain mature executable skill folders copied from existing source skill collections when they fit the user's workflow.
+2. Do not create hand-written aggregate/rewrite skills unless the user explicitly asks for a new custom skill.
+3. Workflow rules, checklist rules, change tracking, resume checkpoints, and schema-first API planning belong in `workflows/`, `templates/`, and `changes/`, not as extra skills by default.
+4. If a copied skill needs customization, edit the copied skill in place and record the reason in a change folder.
+5. Keep all task artifacts under `changes/YYYY-MM-DD-task-slug/`.
+6. If a user says continue, resume, or pick up from last time, first read the latest relevant `changes/*/05-progress.md` and `changes/*/04-tasks.md`.
+7. Do not claim completion without fresh verification evidence recorded in `06-verification.md`.
+8. Before executing any non-trivial coding task, create or update `03-plan.md` and `04-tasks.md` in the relevant change folder. Do not start implementation until the plan lists ordered tasks, expected file boundaries, and verification steps.
 9. For frontend-backend data exchange, plan schema and API contract before implementation logic.
 10. For brownfield work, inspect existing docs, patterns, callers, tests, and shared utilities before proposing changes.
+
+## How To Use Skills
+
+When a task may match a skill in `skills/`:
+
+1. Read `skills/INDEX.md` first to identify candidate skills.
+2. Choose the smallest relevant skill set. Do not load every skill.
+3. Open the selected `skills/<skill-name>/SKILL.md` before acting.
+4. Follow that skill's instructions as written unless the user's direct instruction or this `AGENTS.md` overrides it.
+5. If multiple skills apply, use this order:
+   - requirement/spec skills before planning skills
+   - planning skills before implementation skills
+   - debugging skills before fix attempts
+   - verification/review skills before completion claims
+6. If a selected skill references setup or prerequisites, satisfy those first or record why they were skipped.
+7. If no copied skill fits, use the workflow docs in `workflows/` rather than inventing a new skill.
+
+Common routes:
+
+- PRD from current context -> `skills/to-prd/SKILL.md`
+- Break PRD or plan into issues -> `skills/to-issues/SKILL.md`
+- Test-first implementation -> `skills/tdd/SKILL.md` or `skills/test-driven-development/SKILL.md`
+- Debug failures -> `skills/diagnose/SKILL.md` or `skills/debugging-and-error-recovery/SKILL.md`
+- Code review -> `skills/code-review-and-quality/SKILL.md`
+- Browser/UI verification -> `skills/browser-testing-with-devtools/SKILL.md`
+- Shipping docs or handoff -> `skills/shipping-artifacts/SKILL.md`
 
 ## Required Change Files
 
@@ -28,12 +54,3 @@ Each change folder should contain:
 - `06-verification.md` - verification commands and evidence
 - `07-review.md` - review findings and decisions
 - `08-archive.md` - lessons and follow-up skill improvements
-
-## Source Inspiration
-
-This repository intentionally borrows from:
-
-- `/Users/mac/Documents/obsidian/skills`
-- Superpowers skills: brainstorming, writing-plans, executing-plans, subagent-driven-development, verification-before-completion, writing-skills
-- OpenSpec-style change folders: propose, apply, archive
-- Flow-kit notes: fixed artifacts, brownfield guardrails, checklist execution, and resumable progress

@@ -2,27 +2,19 @@
 
 ## Outcome
 
-Created `/Users/mac/Documents/obsidian/my-skills` as a personal Agent Skill source repository.
+`alice-skills/skills` was corrected to contain mature upstream skills copied directly from existing local skill collections, rather than custom aggregate rewrites.
 
-## What Worked
+## Current Included Count
 
-- Combining standard `skills/<name>/SKILL.md` with OpenSpec-style `changes/` gives both reusable capability and resumable task history.
-- Keeping schema-first API as a planning rule avoids creating an unnecessary extra skill.
-- A small engineering lifecycle set is easier to maintain than a full copy of 151 upstream skills.
+- 28 copied `SKILL.md` files
 
-## What To Improve Next
+## What Changed After Review
 
-- Add `references/` only for skills that prove too dense after real use.
-- Add scripts only for deterministic repeated checks.
-- Pressure-test `use-engineering-skills`, `plan-implementation`, and `resume-change` first.
+- Removed the custom aggregate skill folders from `alice-skills/skills`.
+- Removed the misunderstood `vendor` source-copy approach from `alice-skills`.
+- Copied mature executable skills directly into `alice-skills/skills`, including `to-prd`, `to-issues`, `tdd`, `diagnose`, and related engineering workflow skills.
+- Updated README and skill index to describe the actual copied-skill model.
 
-## Reusable Lessons
+## Lesson
 
-- Put universal process constraints in `AGENTS.md`, `workflows/`, and templates.
-- Put task-specific execution state in `changes/`.
-- Put reusable behavior guidance in `skills/`.
-
-## Skill Improvements To Consider
-
-- Add a tiny `scripts/check-my-skills` validator later if manual checks become repetitive.
-- Add trigger examples per skill after first real usage.
+When the user asks to build a personal skill directory from existing skills, prefer copying mature source skills directly first. Add custom workflow/rules outside `skills/` unless explicitly asked to create new skills.

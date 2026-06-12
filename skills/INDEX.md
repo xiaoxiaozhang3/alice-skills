@@ -1,21 +1,56 @@
 # Skill Index
 
-Use this map before opening individual skills.
+This directory contains mature upstream skills copied directly into `alice-skills/skills/`.
 
-| Skill | Use When | Primary Sources |
-|---|---|---|
-| `use-engineering-skills` | Need to choose a workflow or resume a change | Superpowers `using-superpowers`, flow-kit GO |
-| `clarify-requirements` | Requirements are vague or missing acceptance criteria | `interview-me`, `grill-with-docs`, brainstorming |
-| `write-spec` | A non-trivial change needs design before code | `spec-driven-development`, `create-prd`, OpenSpec propose |
-| `plan-implementation` | A spec needs executable tasks | `writing-plans`, `planning-and-task-breakdown`, `to-issues` |
-| `tdd-implementation` | Changing behavior or fixing a bug | `test-driven-development`, `tdd` |
-| `execute-tasks` | A written plan should be executed step by step | `executing-plans`, `subagent-driven-development`, GSD |
-| `resume-change` | Continue from an interrupted change | OpenSpec change folders, flow-kit SUMMARY/progress |
-| `diagnose-bug` | Something is failing, broken, or slow | `systematic-debugging`, `diagnose` |
-| `source-grounded-implementation` | External APIs/frameworks/libraries are involved | `source-driven-development` |
-| `code-review` | Review before merging or calling work done | `code-review-and-quality`, `requesting-code-review` |
-| `simplify-code` | Code works but is harder than necessary | `code-simplification`, architecture deepening ideas |
-| `security-review` | Auth, permissions, user input, storage, secrets, or third-party integrations are touched | `security-and-hardening`, `intended-vs-implemented` |
-| `browser-verify` | Browser behavior, UI, DOM, network, or visual output matters | `browser-testing-with-devtools`, frontend design checks |
-| `release-check` | Preparing to ship or deploy | `shipping-and-launch`, pre-mortem, verification gate |
-| `document-decisions` | Decisions or lessons should survive the session | `documentation-and-adrs`, `shipping-artifacts`, OpenSpec archive |
+## Engineering Setup And Orientation
+
+| Skill | Use When |
+|---|---|
+| `setup-matt-pocock-skills` | First configuring project-level context for Matt Pocock skills |
+| `zoom-out` | Need broader context on an unfamiliar code area |
+| `grill-with-docs` | Need to pressure-test a plan against project docs and domain language |
+| `triage` | Need to triage issues or prepare work items |
+
+## Spec And Planning
+
+| Skill | Use When |
+|---|---|
+| `to-prd` | Convert conversation context into a PRD |
+| `create-prd` | Create a fuller product requirements document |
+| `spec-driven-development` | Start a significant feature/change with a spec |
+| `planning-and-task-breakdown` | Break clear requirements into implementable tasks |
+| `to-issues` | Convert a plan or PRD into issue-sized work |
+| `test-scenarios` | Produce QA/test scenarios from requirements |
+
+## Implementation And Debugging
+
+| Skill | Use When |
+|---|---|
+| `tdd` | Implement or fix behavior with red-green-refactor |
+| `test-driven-development` | Add or change logic with tests first |
+| `incremental-implementation` | Deliver multi-file changes in small slices |
+| `diagnose` | Debug a hard bug or performance regression |
+| `debugging-and-error-recovery` | Systematically find root cause for failures |
+| `source-driven-development` | Official docs/source should ground implementation |
+| `prototype` | Need a throwaway prototype before committing to a design |
+
+## Review, Quality, Security
+
+| Skill | Use When |
+|---|---|
+| `code-review-and-quality` | Review code quality before merge or completion |
+| `code-simplification` | Simplify working but over-complex code |
+| `improve-codebase-architecture` | Look for architecture improvements in an existing codebase |
+| `security-and-hardening` | Auth, input, storage, secrets, permissions, or integrations are touched |
+| `intended-vs-implemented` | Audit whether code matches documented intent |
+| `strategy-red-team` | Attack assumptions in a PRD/roadmap/strategy |
+| `pre-mortem` | Identify launch or plan risks before execution |
+
+## Browser, Release, Documentation
+
+| Skill | Use When |
+|---|---|
+| `browser-testing-with-devtools` | Browser UI/runtime behavior must be verified |
+| `shipping-and-launch` | Preparing for production launch or deployment |
+| `shipping-artifacts` | Preparing handoff/audit/reviewer-ready docs |
+| `documentation-and-adrs` | Record decisions and durable context |

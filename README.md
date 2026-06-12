@@ -1,50 +1,68 @@
-# My Skills
+# Alice Skills
 
-A personal Agent Skill source repository for AI coding work.
+A curated personal skill directory made from existing mature Agent Skills.
 
-This first version is an engineering workflow pack. It is not a full copy of the upstream skill collections. It selects useful patterns from local skill repositories, Superpowers, and OpenSpec-style workflows, then rewrites them into a small personal system.
+This repository is not a rewritten aggregate pack. The `skills/` directory contains selected upstream `SKILL.md` folders copied directly from the local Obsidian skill collections because they fit the current AI coding workflow.
 
-## Shape
+## Current Shape
 
 ```text
-my-skills/
+alice-skills/
   AGENTS.md
   README.md
+  skills/
   workflows/
   changes/
-  skills/
   templates/
   evals/
 ```
 
-## Core Flow
+## Skills Policy
 
-```text
-clarify -> spec -> plan -> execute -> verify -> review -> release -> document
-```
+- `skills/` contains executable, mature skill folders copied from existing sources.
+- Do not add hand-written aggregate skills unless the user explicitly asks.
+- Workflow notes, checkpoints, and OpenSpec-style change tracking live outside `skills/`.
+- If a source skill needs customization, copy it first, then edit the copied version in place with a change record.
 
-## First Skill Set
+## Included Skill Groups
 
-- `use-engineering-skills` - choose the right workflow and skill
-- `clarify-requirements` - clarify ambiguous work before planning
-- `write-spec` - create focused specs and design docs
-- `plan-implementation` - turn specs into ordered tasks
-- `tdd-implementation` - implement behavior with red-green-refactor
-- `execute-tasks` - execute a written plan with checklist checkpoints
-- `resume-change` - continue from a saved progress checkpoint
-- `diagnose-bug` - debug from evidence instead of guessing
-- `source-grounded-implementation` - use official docs when libraries or APIs matter
-- `code-review` - review changes for correctness, tests, maintainability, and risk
-- `simplify-code` - reduce complexity without changing behavior
-- `security-review` - check auth, data, input, secrets, and trust boundaries
-- `browser-verify` - verify browser/UI behavior in a real runtime
-- `release-check` - prepare release, rollback, monitoring, and risk notes
-- `document-decisions` - archive decisions, evidence, and lessons
+### Matt Pocock Engineering Skills
 
-## Changes
+- `to-prd`
+- `to-issues`
+- `tdd`
+- `diagnose`
+- `grill-with-docs`
+- `zoom-out`
+- `improve-codebase-architecture`
+- `prototype`
+- `triage`
+- `setup-matt-pocock-skills`
 
-Every real task should create a folder under `changes/`. This follows an OpenSpec-inspired flow: one change, one folder, one auditable trail.
+### Addy Osmani Agent Skills
 
-## Installing Elsewhere
+- `spec-driven-development`
+- `planning-and-task-breakdown`
+- `incremental-implementation`
+- `test-driven-development`
+- `debugging-and-error-recovery`
+- `code-review-and-quality`
+- `code-simplification`
+- `security-and-hardening`
+- `source-driven-development`
+- `browser-testing-with-devtools`
+- `shipping-and-launch`
+- `documentation-and-adrs`
 
-This repository is the source workspace. Copy or sync selected `skills/<name>/` folders into Codex or another agent runtime only after they have useful trigger cases and a self-check.
+### PM / Shipping Skills
+
+- `create-prd`
+- `test-scenarios`
+- `pre-mortem`
+- `strategy-red-team`
+- `intended-vs-implemented`
+- `shipping-artifacts`
+
+## Notes
+
+Use `workflows/` and `templates/` for your additional process rules: fixed change folders, checklists, resume checkpoints, completion gates, and schema-first API planning.
