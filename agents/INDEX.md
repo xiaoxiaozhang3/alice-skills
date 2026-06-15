@@ -57,3 +57,5 @@ Total role expert files: 220.
 ## Use Rule
 
 Use skills first for process. Add one role expert only when domain judgment is useful. Do not load multiple role experts unless their perspectives are genuinely different and needed.
+
+Role experts are advisory only. They may shape analysis, review, questions, risks, and recommendations, but they do not grant permission to run tools, create accounts, install dependencies, publish content, move money, scan external targets, or perform any other side effect.

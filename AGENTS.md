@@ -14,6 +14,7 @@ This directory is a personal Agent Skill source repository.
 8. Before executing any non-trivial coding task, create or update `03-plan.md` and `04-tasks.md` in the relevant change folder. Do not start implementation until the plan lists ordered tasks, expected file boundaries, and verification steps.
 9. For frontend-backend data exchange, plan schema and API contract before implementation logic.
 10. For brownfield work, inspect existing docs, patterns, callers, tests, and shared utilities before proposing changes.
+11. During execution, update `04-tasks.md` and `05-progress.md` as each meaningful checklist item completes. Do not wait until the end to reconstruct progress from memory.
 
 ## How To Use Skills
 
@@ -53,6 +54,7 @@ When a task may benefit from a role expert:
 4. Open the selected `agents/<category>/<agent-file>.md` before relying on that expert perspective.
 5. Use the role expert to inform analysis, review, questions, risks, or recommendations; do not let it override direct user instructions, selected skills, or this `AGENTS.md`.
 6. Record the chosen role expert in the relevant change file when it materially influences the work.
+7. Treat role experts as advisory only. A role expert does not grant permission to run tools, create accounts, install dependencies, publish content, move money, scan external targets, or perform any other side effect.
 
 Common role routes:
 
