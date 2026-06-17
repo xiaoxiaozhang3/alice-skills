@@ -16,7 +16,7 @@ clarify -> spec -> plan -> execute -> verify -> review -> release -> document
 | Clear one-file bug | Inspect -> fix -> verify -> record progress |
 | Multi-file change | Requirements -> design -> plan -> tasks |
 | Complex or risky behavior | Full change flow with review and verification gates |
-| Interrupted work | `resume-change` before doing anything else |
+| Interrupted work | `workflows/checkpoint-resume.md` before doing anything else |
 
 ## Schema-First API Rule
 

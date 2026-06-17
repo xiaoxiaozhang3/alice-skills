@@ -6,37 +6,37 @@ Start here when deciding what to load.
 
 ```text
 Need to resume prior work?
-  yes -> resume-change
+  yes -> workflows/checkpoint-resume.md
   no -> continue
 
 Requirements unclear?
-  yes -> clarify-requirements
+  yes -> to-prd or create-prd
   no -> continue
 
 Non-trivial change without written spec?
-  yes -> write-spec
+  yes -> spec-driven-development
   no -> continue
 
 Written spec but no task plan?
-  yes -> plan-implementation
+  yes -> planning-and-task-breakdown
   no -> continue
 
 Executing a plan?
-  yes -> execute-tasks
+  yes -> incremental-implementation
   no -> continue
 
 Bug, failing test, broken behavior, performance regression?
-  yes -> diagnose-bug
+  yes -> diagnose or debugging-and-error-recovery
   no -> continue
 
 External library/API correctness matters?
-  yes -> source-grounded-implementation
+  yes -> source-driven-development
 
 Browser/UI behavior matters?
-  yes -> browser-verify
+  yes -> browser-testing-with-devtools
 
 Before claiming done?
-  yes -> code-review and completion-gates
+  yes -> code-review-and-quality and workflows/completion-gates.md
 ```
 
 ## Small Task Exception

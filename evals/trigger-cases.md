@@ -4,14 +4,14 @@ Use these cases to check whether skills trigger at the right time.
 
 ## Should Trigger
 
-| Prompt | Expected Skill |
-|---|---|
-| "帮我做一个新功能，但我还没想清楚细节" | clarify-requirements |
-| "根据这个需求写一个实现方案" | write-spec or plan-implementation |
-| "继续上次那个任务" | resume-change |
-| "这个测试失败了，帮我看看" | diagnose-bug |
-| "这个改完了吗" | completion-gates via use-engineering-skills |
-| "前端要调用这个后端接口" | plan-implementation schema-first gate |
+| Prompt               | Expected Skill                              |
+| -------------------- | ------------------------------------------- |
+| "帮我做一个新功能，但我还没想清楚细节" | to-prd or create-prd                        |
+| "根据这个需求写一个实现方案"      | spec-driven-development or planning-and-task-breakdown |
+| "继续上次那个任务"           | workflows/checkpoint-resume.md              |
+| "这个测试失败了，帮我看看"       | diagnose or debugging-and-error-recovery    |
+| "这个改完了吗"             | code-review-and-quality plus workflows/completion-gates.md |
+| "前端要调用这个后端接口"        | planning-and-task-breakdown schema-first gate |
 
 ## Should Not Trigger Heavy Flow
 
