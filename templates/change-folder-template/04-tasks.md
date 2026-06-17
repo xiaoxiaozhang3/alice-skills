@@ -14,6 +14,16 @@
 
 ### Task 1: 
 
+**depends_on:** None
+
+**can_parallelize:** no
+
+**allowed_files:**
+- 
+
+**forbidden_files:**
+- 
+
 - [ ] Step 1
 - [ ] Step 2
 - [ ] Step 3

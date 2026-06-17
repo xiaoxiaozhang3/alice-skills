@@ -20,6 +20,12 @@ next_action: replace with exact next action
 
 - 
 
+## Subagents
+
+| Task | Status | Report | Verification | Concerns |
+|---|---|---|---|---|
+|  | not_dispatched |  |  |  |
+
 ## Verification
 
 - Not run yet

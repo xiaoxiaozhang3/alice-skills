@@ -25,6 +25,10 @@ Executing a plan?
   yes -> incremental-implementation
   no -> continue
 
+Independent workstreams or selected skill requires subagents?
+  yes -> workflows/subagent-dispatch.md
+  no -> continue
+
 Bug, failing test, broken behavior, performance regression?
   yes -> diagnose or debugging-and-error-recovery
   no -> continue

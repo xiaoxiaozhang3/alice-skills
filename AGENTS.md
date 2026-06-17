@@ -2,6 +2,22 @@
 
 This directory is a personal Agent Skill source repository.
 
+## Baseline Work Style
+
+For every task, unless explicitly overridden:
+
+1. Think before coding.
+   State assumptions when they matter. Ask only when uncertainty blocks progress. If there are multiple interpretations, name them and choose the safest one. Push back when a simpler approach exists. Ask for acceptance criteria only when missing boundaries would change the work.
+
+2. Keep changes simple.
+   Implement the minimum needed. Do not add speculative features. Do not create abstractions for single-use code. Avoid refactors unless required.
+
+3. Make surgical changes.
+   Touch only files needed for the task. Match existing style and conventions. Do not clean up unrelated code. Do not silently fork from project patterns.
+
+4. Read before writing.
+   Before editing, inspect relevant files, exports, callers, shared utilities, and tests. If structure seems unusual, understand it before changing it.
+
 ## Current Policy
 
 1. `skills/` should contain mature executable skill folders copied from existing source skill collections when they fit the user's workflow.
@@ -284,6 +300,25 @@ Common routes:
 - Browser/UI verification -> `skills/browser-testing-with-devtools/SKILL.md`
     
 - Shipping docs or handoff -> `skills/shipping-artifacts/SKILL.md`
+    
+
+## How To Use Subagents
+
+Subagents are execution helpers, not role expert personas.
+
+When a task may need execution subagents:
+
+1. Read `workflows/subagent-dispatch.md` before dispatching.
+    
+2. Dispatch subagents only when the workflow's dispatch gate is satisfied.
+    
+3. Use `templates/subagent-brief-template.md` for each subagent brief.
+    
+4. Keep `agents/` role experts advisory; do not treat them as execution subagents.
+    
+5. The main agent remains responsible for scope, edits, verification, progress records, and final completion claims.
+    
+6. Record subagent status and verification in the relevant change folder when the task is tracked.
     
 
 ## How To Use Role Experts
